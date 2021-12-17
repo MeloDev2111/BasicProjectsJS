@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap');
+
+body{
+  padding-left: 2em;
+  font-family: 'Noto Sans Display', sans-serif;
+}
+
+.Tittle{
+  font-size: 4em;
+}
+
+@counter-style Simbolbertos {
+  system: cyclic;
+  symbols: ⏰ 🔐;
+  suffix: " ";
+  
+}
+
+.ListaProyectos{
+  font-size: 1.3em;
+  list-style-type: Simbolbertos;
+}
+
+.ListaProyectos > li{
+  padding-bottom: 14px;
+}
