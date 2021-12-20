@@ -3,9 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <div class="tittle">
+    <img src="lock.png" alt="lock" height="300px">
+    Password Generator
+  </div>
   
+  <div class="options-section">
+    <div class="options-container">
+      <!-- Option for password generator -->
+      <div class="option-container">
+        <label for="length">Password Length:</label> 
+        
+        <!-- values for option -->
+        <div class="option">
+          <select class="dropdown" id="length" name="length"></select>
+          <span>(from 8 to 16)</span>
+          <script>
+            var select = document.getElementById("length");
+            select.options.length = 0;
+            for(let i = 8; i<16; i++) {
+              select.options[select.options.length] = new Option(i, i);
+            }
+            select.options[select.options.length] = new Option(16, 16,true,true);
+          </script>
+        </div>
+      </div>
+
+      <!-- Option for password generator -->
+      <div class="option-container">
+        <label for="allowSymbols">Include Symbols:</label>  
+        
+        <!-- value for option -->
+        <div class="option">
+          <input id="allowSymbols" value="true" type="checkbox" checked>
+          <span> @ # $ % </span>
+        </div>
+      </div>
+
+      <!-- Option for password generator -->
+      <div class="option-container">
+        <label for="allowNumbers">Include Numbers:</label>  
+        
+        <!-- value for option -->
+        <div class="option">
+          <input id="allowNumbers" type="checkbox" checked>
+          <span> 1 2 3 4 5 6 </span>
+        </div>
+      </div>
+
+      <!-- Option for password generator -->
+      <div class="option-container">
+        <label for="allowLowercase">Include Lowercase Characters:</label>  
+        
+        <!-- value for option -->
+        <div class="option">
+          <input id="allowLowercase" type="checkbox" checked>
+          <span> a b c d e f g h </span>
+        </div>
+      </div>
+
+      <!-- Option for password generator -->
+      <div class="option-container">
+        <label for="allowUppercase">Include Uppercase Characters:</label>  
+        
+        <!-- value for option -->
+        <div class="option">
+          <input id="allowUppercase" type="checkbox" checked>
+          <span> A B C D E F G H </span>
+        </div>
+      </div>
+
+      <!-- Option for password generator -->
+      <div class="option-container">
+        <label for="allowAmbiguous">Include Ambiguous Characters:</label>  
+        
+        <!-- value for option -->
+        <div class="option">
+          <input id="allowAmbiguous" type="checkbox">
+          <span> {} [] () /\ ' " ` ~ , ; : . &lt; &gt; </span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="btn-container">
+      <button onclick="generatingPassword()" class="btn" type="submit">Generate</button>
+    </div>
+
+  </div>
+
+  <div class="password-container">
+    <input class="password" id="password" type="text">
+  </div>
+
 </body>
 </html>

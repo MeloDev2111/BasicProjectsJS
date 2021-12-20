@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@600&display=swap');
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Noto Sans Display', sans-serif;
+  color: white;
+}
+
+.tittle{
+  display: flex;
+  flex-direction: column;
+  font-size: 4em;
+  align-items: center;
+  font-weight: bold;
+  font-stretch: extra-expanded;
+  color: rgb(252, 226, 78);
+}
+.tittle :first-child {
+  padding-top: .5em;
+}
+
+.options-container{
+  background-color: darkslategray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+  padding: 1em 1em 1em 2em; 
+  display: grid ;
+}
+.option-container{
+  margin-bottom: 1em;
+  columns: 2;
+}
+
+.option-container span{
+  font-size: 90%;
+}
+
+.dropdown{
+  width: 60px;
+  font-size: 1em;
+}
+
+.btn-container{
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.btn {
+  background-color:#1b6166; /* Green */
+  border: 1px aquamarine solid;
+  border-radius: 12px;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.password-container{
+  margin-top: 1em;
+  margin-bottom: 5em;
+}
+
+.password{
+  padding: 12px 20px;
+  width: 800px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-radius: 10px;
+  outline: transparent;
+  font-family: 'Noto Sans Mono', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
