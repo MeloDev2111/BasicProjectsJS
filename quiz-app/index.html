@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+  <script lang="JavaScript" src="data.js" defer></script>
+  <script lang="JavaScript" src="script.js" defer></script>
+</head>
+<body>
+  <div id="quiz-container" class="quiz-container">
+    <div id="tittle" class="quiz-header">
+      Question title?
+    </div>
+    <div id="quiz-body" class="quiz-body">
+      <ul id="options-list" class="options-list">
+        <li class="option">
+          <input id="a" name="answer" class="answer" type="radio">
+          <label id="a-text" for="a">Option A aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</label>
+        </li>
+        <li class="option">
+          <input id="b" name="answer" class="answer" type="radio">
+          <label id="b-text" for="b">Option B</label>
+        </li>
+        <li class="option">
+          <input id="c" name="answer" class="answer" type="radio">
+          <label id="c-text" for="c">Option C</label>
+        </li>
+        <!-- limpiar y agregar con js las opciones -->
+      </ul>
+    </div>
+    <button id="submitBtn" class="btn" type="submit">Submit</button>
+  </div>
+</body>
+</html>
