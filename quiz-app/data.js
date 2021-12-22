@@ -1,32 +1,31 @@
 const quizData = [
   {
-    tittle: "Tittle 1",
+    tittle: "¿Cual de los siguientes es un postre peruano?",
     options:{
-      a:"Option A",
-      b:"Option B",
-      c:"Option C",
-      d:"Option D"
+      a:"Buñuelo",
+      b:"Picarones",
+      c:"Pancake",
+      d:"Mochi"
     },
-    correct:"d" 
-  },
-  {
-    tittle: "Tittle 2",
+    correct:"b" 
+  },{
+    tittle: "¿Que es Albion Online?",
     options:{
-      a:"Option A",
-      b:"Option B",
-      c:"Option C"
+      a:"Hola, Gamer, juguemos League of Legends ¿Qué te parece si lo descargamos...",
+      b:"Es un DLC de Train Simualtor 2016",
+      c:"Es un mmorpg no lineal, en el que escribes tu propia historia sin limitarte a seguir un camino prefijado..."
     },
     correct:"c" 
   },
   {
-    tittle: "Tittle 3",
+    tittle: "Cual de las sentencias devuelve \" 0 \" ",
     options:{
-      a:"Option A",
-      b:"Option B",
-      c:"Option C",
-      d:"Option D",
-      e:"Option E"
+      a:" false || \" 0 \"",
+      b:" \" 0 \" + \" 0 \" ",
+      c:" true || \" 0 \" ",
+      d:" \" hola \" && false ",
+      e:"!true"
     },
-    correct:"b" 
+    correct:"a" 
   },
 ]
